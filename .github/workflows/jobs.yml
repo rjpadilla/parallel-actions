@@ -11,3 +11,7 @@ jobs:
     runs-on: windows-latest
     steps:
     - run: echo hello world
+  macos:
+    runs-on: macos-latest
+    steps:
+    - run: echo hello world
