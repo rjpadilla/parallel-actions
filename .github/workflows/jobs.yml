@@ -6,7 +6,9 @@ jobs:
   ubuntu:
     runs-on: ubuntu-latest
     steps:
-    - run: echo hello world
+    - run: |
+        echo hello world
+        sleep 20
   windows:
     runs-on: windows-latest
     steps:
@@ -14,4 +16,6 @@ jobs:
   macos:
     runs-on: macos-latest
     steps:
-    - run: echo hello world
+    - run: |
+        echo hello world
+        sleep 20
