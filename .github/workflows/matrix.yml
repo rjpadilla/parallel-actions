@@ -1,0 +1,14 @@
+# This is a basic workflow to help you get started with Actions
+
+name: Parallel Matrix
+
+on: push
+
+jobs:
+  parallel-matrix:
+    strategy:
+      matrix:
+        os: [ubuntu-latest, macos-latest, windows-latest]
+    runs-on: ${{ matrix.os }}
+    steps:
+      - run: echo hello world
