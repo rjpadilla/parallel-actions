@@ -1,0 +1,9 @@
+name: Parallel Jobs
+
+on: push
+
+jobs: 
+  ubuntu:
+    runs-on: ubuntu-latest
+    steps:
+    - run: echo hello world
