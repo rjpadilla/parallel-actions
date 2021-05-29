@@ -8,7 +8,7 @@ jobs:
   parallel-matrix:
     strategy:
       matrix:
-        os: [ubuntu-latest, macos-latest, windows-latest]
-    runs-on: ${{ matrix.os }}
+        arch: [x86, arm, arm64]
+    runs-on: ubuntu-latest
     steps:
-      - run: echo hello world
+      - run: echo ${{ matrix.arch }}
